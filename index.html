@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>Visualising Fitts's Law</title>
+
+		<script src="https://d3js.org/d3.v2.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+		<link type="text/css" rel="stylesheet" href="reset.css"/>
+		<link type="text/css" rel="stylesheet" href="960_12_col.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="container_12">
+
+			<div class="grid_8">
+				<div id="test-area" class="sans"></div>
+			</div>
+
+			<div class="grid_4 border sans" style="height: 400px; padding: 10px; width: 290px;">
+				<button id="downloadCSVButton" type="button">Download All Data as CSV</button>
+				<button id="deleteAllBtn" type="button" style="background-color: #d9534f; color: white;">전체 데이터 삭제</button>
+				
+				<p style="margin-top: 10px;">
+					<button id="fullscreenBtn" type="button">전체화면</button>
+				</p>
+
+				<div class="sliders" style="margin-top: 10px;"></div>
+
+				<p style="margin-top: 10px;">Data Sets:</p>
+				<div id="dataSets"></div>
+			</div>
+
+			<script type="text/javascript" src="fitts-law.js"></script>
+
+		</div> 
+	</body>
+</html>
